@@ -1,0 +1,8 @@
+version: '2'
+services:
+  ubuntu:
+    build:
+      context: .
+      args:
+        UBUNTU_VERSION: $UBUNTU_VERSION
+    image: armv7/armhf-ubuntu:${UBUNTU_VERSION}

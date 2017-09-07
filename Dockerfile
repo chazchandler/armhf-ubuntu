@@ -1,4 +1,8 @@
-FROM armv7/armhf-ubuntu_core
+MAINTAINER umiddleb, chazchandler
+
+ARG UBUNTU_VERSION
+
+FROM armv7/armhf-ubuntu_core:${UBUNTU_VERSION}
 
 # a few minor docker-specific tweaks
 # see https://github.com/tianon/docker-brew-ubuntu-core/blob/a9da4b3cd8977c2aacafe5d9d0056cbb360f2d1c/trusty/Dockerfile
