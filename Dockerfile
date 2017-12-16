@@ -1,6 +1,9 @@
 ARG UBUNTU_VERSION
+ARG UBUNTU_ARCH
 
-FROM armv7/armhf-ubuntu_core:${UBUNTU_VERSION}
+FROM chaznet/${UBUNTU_ARCH}-ubuntu_core:${UBUNTU_VERSION}
+
+MAINTAINER umiddleb, chazchandler
 
 MAINTAINER umiddleb, chazchandler
 
