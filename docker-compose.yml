@@ -6,4 +6,5 @@ services:
       args:
         UBUNTU_VERSION: $UBUNTU_VERSION
         UBUNTU_ARCH: $UBUNTU_ARCH
+        DEBIAN_FRONTEND: noninteractive
     image: chaznet/${UBUNTU_ARCH}-ubuntu:${UBUNTU_VERSION}
